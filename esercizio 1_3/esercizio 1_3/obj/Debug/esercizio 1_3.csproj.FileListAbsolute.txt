@@ -1,0 +1,7 @@
+D:\unipr\Tecniche di sviluppo software\esercizio 1_3\esercizio 1_3\bin\Debug\esercizio 1_3.exe.config
+D:\unipr\Tecniche di sviluppo software\esercizio 1_3\esercizio 1_3\bin\Debug\esercizio 1_3.exe
+D:\unipr\Tecniche di sviluppo software\esercizio 1_3\esercizio 1_3\bin\Debug\esercizio 1_3.pdb
+D:\unipr\Tecniche di sviluppo software\esercizio 1_3\esercizio 1_3\obj\Debug\esercizio 1_3.csproj.CoreCompileInputs.cache
+D:\unipr\Tecniche di sviluppo software\esercizio 1_3\esercizio 1_3\obj\Debug\esercizio 1_3.exe
+D:\unipr\Tecniche di sviluppo software\esercizio 1_3\esercizio 1_3\obj\Debug\esercizio 1_3.pdb
+D:\unipr\Tecniche di sviluppo software\esercizio 1_3\esercizio 1_3\obj\Debug\esercizio 1_3.csprojAssemblyReference.cache
