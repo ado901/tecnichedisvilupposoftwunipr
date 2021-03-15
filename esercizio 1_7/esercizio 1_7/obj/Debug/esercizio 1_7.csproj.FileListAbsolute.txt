@@ -1,0 +1,6 @@
+C:\Users\xadoz\source\repos\esercizio 1_7\esercizio 1_7\bin\Debug\esercizio 1_7.exe.config
+C:\Users\xadoz\source\repos\esercizio 1_7\esercizio 1_7\bin\Debug\esercizio 1_7.exe
+C:\Users\xadoz\source\repos\esercizio 1_7\esercizio 1_7\bin\Debug\esercizio 1_7.pdb
+C:\Users\xadoz\source\repos\esercizio 1_7\esercizio 1_7\obj\Debug\esercizio 1_7.csproj.CoreCompileInputs.cache
+C:\Users\xadoz\source\repos\esercizio 1_7\esercizio 1_7\obj\Debug\esercizio 1_7.exe
+C:\Users\xadoz\source\repos\esercizio 1_7\esercizio 1_7\obj\Debug\esercizio 1_7.pdb
