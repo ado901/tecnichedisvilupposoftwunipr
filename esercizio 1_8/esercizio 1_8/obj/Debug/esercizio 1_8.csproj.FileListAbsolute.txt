@@ -1,7 +1,0 @@
-C:\Users\xadoz\source\repos\esercizio 1_8\esercizio 1_8\bin\Debug\esercizio 1_8.exe.config
-C:\Users\xadoz\source\repos\esercizio 1_8\esercizio 1_8\bin\Debug\esercizio 1_8.exe
-C:\Users\xadoz\source\repos\esercizio 1_8\esercizio 1_8\bin\Debug\esercizio 1_8.pdb
-C:\Users\xadoz\source\repos\esercizio 1_8\esercizio 1_8\obj\Debug\esercizio 1_8.csprojAssemblyReference.cache
-C:\Users\xadoz\source\repos\esercizio 1_8\esercizio 1_8\obj\Debug\esercizio 1_8.csproj.CoreCompileInputs.cache
-C:\Users\xadoz\source\repos\esercizio 1_8\esercizio 1_8\obj\Debug\esercizio 1_8.exe
-C:\Users\xadoz\source\repos\esercizio 1_8\esercizio 1_8\obj\Debug\esercizio 1_8.pdb

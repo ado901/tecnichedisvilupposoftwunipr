@@ -1,7 +1,0 @@
-C:\Users\xadoz\source\repos\Esercizio 1_6\Esercizio 1_6\bin\Debug\Esercizio 1_6.exe.config
-C:\Users\xadoz\source\repos\Esercizio 1_6\Esercizio 1_6\bin\Debug\Esercizio 1_6.exe
-C:\Users\xadoz\source\repos\Esercizio 1_6\Esercizio 1_6\bin\Debug\Esercizio 1_6.pdb
-C:\Users\xadoz\source\repos\Esercizio 1_6\Esercizio 1_6\obj\Debug\Esercizio 1_6.csprojAssemblyReference.cache
-C:\Users\xadoz\source\repos\Esercizio 1_6\Esercizio 1_6\obj\Debug\Esercizio 1_6.csproj.CoreCompileInputs.cache
-C:\Users\xadoz\source\repos\Esercizio 1_6\Esercizio 1_6\obj\Debug\Esercizio 1_6.exe
-C:\Users\xadoz\source\repos\Esercizio 1_6\Esercizio 1_6\obj\Debug\Esercizio 1_6.pdb

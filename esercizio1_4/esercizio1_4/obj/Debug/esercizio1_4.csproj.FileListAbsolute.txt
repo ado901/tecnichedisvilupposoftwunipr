@@ -1,6 +1,0 @@
-D:\unipr\Tecniche di sviluppo software\esercizio1_4\esercizio1_4\bin\Debug\esercizio1_4.exe.config
-D:\unipr\Tecniche di sviluppo software\esercizio1_4\esercizio1_4\bin\Debug\esercizio1_4.exe
-D:\unipr\Tecniche di sviluppo software\esercizio1_4\esercizio1_4\bin\Debug\esercizio1_4.pdb
-D:\unipr\Tecniche di sviluppo software\esercizio1_4\esercizio1_4\obj\Debug\esercizio1_4.csproj.CoreCompileInputs.cache
-D:\unipr\Tecniche di sviluppo software\esercizio1_4\esercizio1_4\obj\Debug\esercizio1_4.exe
-D:\unipr\Tecniche di sviluppo software\esercizio1_4\esercizio1_4\obj\Debug\esercizio1_4.pdb
