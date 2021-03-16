@@ -33,7 +33,11 @@ namespace esericzio_1_9
         static void Main(string[] args)
         {
             const string PATH = @"C:\prova";
-            CreateText(PATH);
+            if (!Directory.EnumerateFileSystemEntries(PATH).Any())
+            {
+                CreateText(PATH);
+            }
+            
             string[] files = Directory.GetFiles(PATH);
             List<Datofile> listaminori = new List<Datofile>();
             List<Datofile> listatotali = new List<Datofile>();
