@@ -1,0 +1,7 @@
+C:\Users\xadoz\source\repos\esericzio 1_9\esericzio 1_9\bin\Debug\esericzio 1_9.exe.config
+C:\Users\xadoz\source\repos\esericzio 1_9\esericzio 1_9\bin\Debug\esericzio 1_9.exe
+C:\Users\xadoz\source\repos\esericzio 1_9\esericzio 1_9\bin\Debug\esericzio 1_9.pdb
+C:\Users\xadoz\source\repos\esericzio 1_9\esericzio 1_9\obj\Debug\esericzio 1_9.csprojAssemblyReference.cache
+C:\Users\xadoz\source\repos\esericzio 1_9\esericzio 1_9\obj\Debug\esericzio 1_9.csproj.CoreCompileInputs.cache
+C:\Users\xadoz\source\repos\esericzio 1_9\esericzio 1_9\obj\Debug\esericzio 1_9.exe
+C:\Users\xadoz\source\repos\esericzio 1_9\esericzio 1_9\obj\Debug\esericzio 1_9.pdb
