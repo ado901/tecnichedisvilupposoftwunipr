@@ -1,0 +1,12 @@
+C:\Users\xadoz\source\repos\wcftestserver\wcftestserver\bin\Debug\wcftestserver.exe.config
+C:\Users\xadoz\source\repos\wcftestserver\wcftestserver\bin\Debug\wcftestserver.exe
+C:\Users\xadoz\source\repos\wcftestserver\wcftestserver\bin\Debug\wcftestserver.pdb
+C:\Users\xadoz\source\repos\wcftestserver\wcftestserver\obj\Debug\wcftestserver.csproj.CoreCompileInputs.cache
+C:\Users\xadoz\source\repos\wcftestserver\wcftestserver\obj\Debug\wcftestserver.exe
+C:\Users\xadoz\source\repos\wcftestserver\wcftestserver\obj\Debug\wcftestserver.pdb
+C:\Users\xadoz\source\repos\wcftestserver\wcftestserver\obj\Debug\wcftestserver.csprojAssemblyReference.cache
+C:\Users\xadoz\source\repos\wcftestserver\wcftestserver\bin\Debug\EntityFramework.dll
+C:\Users\xadoz\source\repos\wcftestserver\wcftestserver\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\xadoz\source\repos\wcftestserver\wcftestserver\bin\Debug\EntityFramework.xml
+C:\Users\xadoz\source\repos\wcftestserver\wcftestserver\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\xadoz\source\repos\wcftestserver\wcftestserver\obj\Debug\wcftestserver.csproj.CopyComplete
