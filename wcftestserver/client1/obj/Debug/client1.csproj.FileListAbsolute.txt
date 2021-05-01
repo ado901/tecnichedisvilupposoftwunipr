@@ -1,7 +1,0 @@
-C:\Users\xadoz\source\repos\wcftestserver\client1\bin\Debug\client1.exe.config
-C:\Users\xadoz\source\repos\wcftestserver\client1\bin\Debug\client1.exe
-C:\Users\xadoz\source\repos\wcftestserver\client1\bin\Debug\client1.pdb
-C:\Users\xadoz\source\repos\wcftestserver\client1\obj\Debug\client1.csproj.CoreCompileInputs.cache
-C:\Users\xadoz\source\repos\wcftestserver\client1\obj\Debug\client1.exe
-C:\Users\xadoz\source\repos\wcftestserver\client1\obj\Debug\client1.pdb
-C:\Users\xadoz\source\repos\wcftestserver\client1\obj\Debug\client1.csprojAssemblyReference.cache

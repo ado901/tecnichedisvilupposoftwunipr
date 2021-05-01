@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TecnichedisvilModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="commesso">
+    <Key>
+      <PropertyRef Name="codice_commesso" />
+    </Key>
+    <Property Name="codice_commesso" Type="bigint" Nullable="false" />
+    <Property Name="nome" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="cognome" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="nprenotazioni" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="prodotto">
+    <Key>
+      <PropertyRef Name="codice_prodotto" />
+    </Key>
+    <Property Name="codice_prodotto" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="titolo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="genere" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="producer" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="quantità" Type="int" Nullable="false" />
+    <Property Name="data_uscita" Type="date" Nullable="false" />
+    <Property Name="prezzo" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="transazioni">
+    <Key>
+      <PropertyRef Name="codice_transazione" />
+    </Key>
+    <Property Name="codice_transazione" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice_prodotto" Type="bigint" Nullable="false" />
+    <Property Name="codice_commesso" Type="bigint" Nullable="false" />
+    <Property Name="prenotazione" Type="bit" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="prezzo" Type="float" Nullable="false" />
+    <Property Name="data" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="utenti">
+    <Key>
+      <PropertyRef Name="email" />
+    </Key>
+    <Property Name="cognome" Type="varchar" MaxLength="50" />
+    <Property Name="nome" Type="varchar" MaxLength="50" />
+    <Property Name="nascita" Type="bigint" />
+    <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="indirizzo" Type="varchar" MaxLength="50" />
+    <Property Name="portafoglio" Type="float" />
+  </EntityType>
+  <Association Name="FK_transazioni_commesso">
+    <End Role="commesso" Type="Self.commesso" Multiplicity="1" />
+    <End Role="transazioni" Type="Self.transazioni" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="commesso">
+        <PropertyRef Name="codice_commesso" />
+      </Principal>
+      <Dependent Role="transazioni">
+        <PropertyRef Name="codice_commesso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_transazioni_prodotto">
+    <End Role="prodotto" Type="Self.prodotto" Multiplicity="1" />
+    <End Role="transazioni" Type="Self.transazioni" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="prodotto">
+        <PropertyRef Name="codice_prodotto" />
+      </Principal>
+      <Dependent Role="transazioni">
+        <PropertyRef Name="codice_prodotto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TecnichedisvilModelStoreContainer">
+    <EntitySet Name="commesso" EntityType="Self.commesso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="prodotto" EntityType="Self.prodotto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="transazioni" EntityType="Self.transazioni" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="utenti" EntityType="Self.utenti" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_transazioni_commesso" Association="Self.FK_transazioni_commesso">
+      <End Role="commesso" EntitySet="commesso" />
+      <End Role="transazioni" EntitySet="transazioni" />
+    </AssociationSet>
+    <AssociationSet Name="FK_transazioni_prodotto" Association="Self.FK_transazioni_prodotto">
+      <End Role="prodotto" EntitySet="prodotto" />
+      <End Role="transazioni" EntitySet="transazioni" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

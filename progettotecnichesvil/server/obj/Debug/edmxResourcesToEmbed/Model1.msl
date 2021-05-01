@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TecnichedisvilModelStoreContainer" CdmEntityContainer="TecnichedisvilEntities">
+    <EntitySetMapping Name="utenti">
+      <EntityTypeMapping TypeName="TecnichedisvilModel.utenti">
+        <MappingFragment StoreEntitySet="utenti">
+          <ScalarProperty Name="cognome" ColumnName="cognome" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="nascita" ColumnName="nascita" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="indirizzo" ColumnName="indirizzo" />
+          <ScalarProperty Name="portafoglio" ColumnName="portafoglio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="commesso">
+      <EntityTypeMapping TypeName="TecnichedisvilModel.commesso">
+        <MappingFragment StoreEntitySet="commesso">
+          <ScalarProperty Name="nprenotazioni" ColumnName="nprenotazioni" />
+          <ScalarProperty Name="cognome" ColumnName="cognome" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="codice_commesso" ColumnName="codice_commesso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="prodotto">
+      <EntityTypeMapping TypeName="TecnichedisvilModel.prodotto">
+        <MappingFragment StoreEntitySet="prodotto">
+          <ScalarProperty Name="prezzo" ColumnName="prezzo" />
+          <ScalarProperty Name="data_uscita" ColumnName="data_uscita" />
+          <ScalarProperty Name="quantità" ColumnName="quantità" />
+          <ScalarProperty Name="producer" ColumnName="producer" />
+          <ScalarProperty Name="genere" ColumnName="genere" />
+          <ScalarProperty Name="titolo" ColumnName="titolo" />
+          <ScalarProperty Name="codice_prodotto" ColumnName="codice_prodotto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="transazioni">
+      <EntityTypeMapping TypeName="TecnichedisvilModel.transazioni">
+        <MappingFragment StoreEntitySet="transazioni">
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="prezzo" ColumnName="prezzo" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="prenotazione" ColumnName="prenotazione" />
+          <ScalarProperty Name="codice_commesso" ColumnName="codice_commesso" />
+          <ScalarProperty Name="codice_prodotto" ColumnName="codice_prodotto" />
+          <ScalarProperty Name="codice_transazione" ColumnName="codice_transazione" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

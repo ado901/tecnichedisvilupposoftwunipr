@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TecnichedisvilModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="utenti">
+    <Key>
+      <PropertyRef Name="email" />
+    </Key>
+    <Property Name="cognome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="nascita" Type="Int64" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="indirizzo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="portafoglio" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="TecnichedisvilEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="utenti" EntityType="Self.utenti" />
+    <EntitySet Name="commesso" EntityType="TecnichedisvilModel.commesso" />
+    <EntitySet Name="prodotto" EntityType="TecnichedisvilModel.prodotto" />
+    <EntitySet Name="transazioni" EntityType="TecnichedisvilModel.transazioni" />
+    <AssociationSet Name="FK_transazioni_commesso" Association="TecnichedisvilModel.FK_transazioni_commesso">
+      <End Role="commesso" EntitySet="commesso" />
+      <End Role="transazioni" EntitySet="transazioni" />
+    </AssociationSet>
+    <AssociationSet Name="FK_transazioni_prodotto" Association="TecnichedisvilModel.FK_transazioni_prodotto">
+      <End Role="prodotto" EntitySet="prodotto" />
+      <End Role="transazioni" EntitySet="transazioni" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="commesso">
+    <Key>
+      <PropertyRef Name="codice_commesso" />
+    </Key>
+    <Property Name="codice_commesso" Type="Int64" Nullable="false" />
+    <Property Name="nome" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cognome" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="nprenotazioni" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="transazioni" Relationship="TecnichedisvilModel.FK_transazioni_commesso" FromRole="commesso" ToRole="transazioni" />
+  </EntityType>
+  <EntityType Name="prodotto">
+    <Key>
+      <PropertyRef Name="codice_prodotto" />
+    </Key>
+    <Property Name="codice_prodotto" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="titolo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="genere" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="producer" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="quantità" Type="Int32" Nullable="false" />
+    <Property Name="data_uscita" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="prezzo" Type="Double" Nullable="false" />
+    <NavigationProperty Name="transazioni" Relationship="TecnichedisvilModel.FK_transazioni_prodotto" FromRole="prodotto" ToRole="transazioni" />
+  </EntityType>
+  <EntityType Name="transazioni">
+    <Key>
+      <PropertyRef Name="codice_transazione" />
+    </Key>
+    <Property Name="codice_transazione" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice_prodotto" Type="Int64" Nullable="false" />
+    <Property Name="codice_commesso" Type="Int64" Nullable="false" />
+    <Property Name="prenotazione" Type="Boolean" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="prezzo" Type="Double" Nullable="false" />
+    <Property Name="data" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="commesso" Relationship="TecnichedisvilModel.FK_transazioni_commesso" FromRole="transazioni" ToRole="commesso" />
+    <NavigationProperty Name="prodotto" Relationship="TecnichedisvilModel.FK_transazioni_prodotto" FromRole="transazioni" ToRole="prodotto" />
+  </EntityType>
+  <Association Name="FK_transazioni_commesso">
+    <End Type="TecnichedisvilModel.commesso" Role="commesso" Multiplicity="1" />
+    <End Type="TecnichedisvilModel.transazioni" Role="transazioni" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="commesso">
+        <PropertyRef Name="codice_commesso" />
+      </Principal>
+      <Dependent Role="transazioni">
+        <PropertyRef Name="codice_commesso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_transazioni_prodotto">
+    <End Type="TecnichedisvilModel.prodotto" Role="prodotto" Multiplicity="1" />
+    <End Type="TecnichedisvilModel.transazioni" Role="transazioni" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="prodotto">
+        <PropertyRef Name="codice_prodotto" />
+      </Principal>
+      <Dependent Role="transazioni">
+        <PropertyRef Name="codice_prodotto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

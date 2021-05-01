@@ -1,0 +1,6 @@
+D:\unipr\Tecniche di sviluppo software\progettotecnichesvil\progettotecnichesvil\obj\Debug\client.csproj.CoreCompileInputs.cache
+D:\unipr\Tecniche di sviluppo software\progettotecnichesvil\progettotecnichesvil\bin\Debug\progettotecnichesvil.exe.config
+D:\unipr\Tecniche di sviluppo software\progettotecnichesvil\progettotecnichesvil\bin\Debug\progettotecnichesvil.exe
+D:\unipr\Tecniche di sviluppo software\progettotecnichesvil\progettotecnichesvil\bin\Debug\progettotecnichesvil.pdb
+D:\unipr\Tecniche di sviluppo software\progettotecnichesvil\progettotecnichesvil\obj\Debug\progettotecnichesvil.exe
+D:\unipr\Tecniche di sviluppo software\progettotecnichesvil\progettotecnichesvil\obj\Debug\progettotecnichesvil.pdb
