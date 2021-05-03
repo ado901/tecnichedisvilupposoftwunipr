@@ -30,7 +30,7 @@ namespace server
                 try
                 {
                    
-                    UtentiEntity utente = db.utenti.Where((x) => x.email == ut.email && x.password == ut.password).First();
+                    utenti utente = db.utenti.Where((x) => x.email == ut.email && x.password == ut.password).First();
                     //se l'utente è loggato popolo l'oggetto utente ut con i dati dal database
                     ut.loginEffettuato(utente);
                     Console.WriteLine("Utente " + ut.nome + " " + ut.cognome + ", benvenuto");
@@ -77,7 +77,7 @@ namespace server
                 try
                 {
                     long datanascita = long.Parse(ut.nascita.ToString("yyyyMMdd"));
-                    UtentiEntity utente = new UtentiEntity()
+                    utenti utente = new utenti()
                     {
                         email = ut.email,
                         password = ut.password,
@@ -104,6 +104,7 @@ namespace server
                 catch (Exception ex)
                 {
                     Console.WriteLine("registrazione fallita: " + ex.Message);
+                    throw ex;
                     return (false, ut);
                 }
 

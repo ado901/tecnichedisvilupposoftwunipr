@@ -41,6 +41,7 @@ namespace progettotecnichesvil
                             Console.WriteLine("2. LOGIN");
                             
                             var key = Console.ReadKey();
+                            Console.WriteLine("\n");
                             try
                             {
                                 switch (key.KeyChar)
@@ -49,10 +50,11 @@ namespace progettotecnichesvil
                                     case '1':
 
                                         Console.WriteLine("Inserisci il email:");
-                                        ut.email = Console.ReadLine();
+                                        string email = Console.ReadLine();
 
-
-                                        Utility.IsValidEmail(ut.email);
+                                        //se non va lancia eccezione
+                                        Utility.IsValidEmail(email);
+                                        ut.email = email;
 
                                         Console.WriteLine("Inserisci il password:");
                                         string inputString = Console.ReadLine();

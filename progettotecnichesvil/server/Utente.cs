@@ -18,7 +18,7 @@ namespace server
         public double? portafoglio { get; set; }
 
         //prendo l'entity utente del db e setto tutte le proprietà dell'instanza
-        public void loginEffettuato(UtentiEntity login)
+        public void loginEffettuato(utenti login)
         {
             try
             {

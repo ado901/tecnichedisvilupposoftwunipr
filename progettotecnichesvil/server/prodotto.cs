@@ -12,12 +12,12 @@ namespace server
     using System;
     using System.Collections.Generic;
     
-    public partial class ProdottoEntity
+    public partial class prodotto
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ProdottoEntity()
+        public prodotto()
         {
-            this.transazioni = new HashSet<TransazioniEntity>();
+            this.transazioni = new HashSet<transazioni>();
         }
     
         public long codice_prodotto { get; set; }
@@ -29,6 +29,6 @@ namespace server
         public double prezzo { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TransazioniEntity> transazioni { get; set; }
+        public virtual ICollection<transazioni> transazioni { get; set; }
     }
 }
