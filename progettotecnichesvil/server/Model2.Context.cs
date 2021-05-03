@@ -25,9 +25,9 @@ namespace server
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<utenti> utenti { get; set; }
-        public virtual DbSet<commesso> commesso { get; set; }
-        public virtual DbSet<prodotto> prodotto { get; set; }
-        public virtual DbSet<transazioni> transazioni { get; set; }
+        public virtual DbSet<UtentiEntity> utenti { get; set; }
+        public virtual DbSet<CommessoEntity> commesso { get; set; }
+        public virtual DbSet<ProdottoEntity> prodotto { get; set; }
+        public virtual DbSet<TransazioniEntity> transazioni { get; set; }
     }
 }

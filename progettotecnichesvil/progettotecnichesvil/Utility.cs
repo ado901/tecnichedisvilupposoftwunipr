@@ -51,5 +51,20 @@ namespace progettotecnichesvil
             return (anno, mese, giorni);
         }
 
+
+        //funzione trovata su stackoverflow per convalidare email
+        public static bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+                return false;
+            }
+        }
     }
 }

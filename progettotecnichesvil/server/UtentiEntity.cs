@@ -12,17 +12,14 @@ namespace server
     using System;
     using System.Collections.Generic;
     
-    public partial class transazioni
+    public partial class UtentiEntity
     {
-        public long codice_transazione { get; set; }
-        public long codice_prodotto { get; set; }
-        public long codice_commesso { get; set; }
-        public bool prenotazione { get; set; }
+        public string cognome { get; set; }
+        public string nome { get; set; }
+        public Nullable<long> nascita { get; set; }
+        public string password { get; set; }
         public string email { get; set; }
-        public double prezzo { get; set; }
-        public System.DateTime data { get; set; }
-    
-        public virtual commesso commesso { get; set; }
-        public virtual prodotto prodotto { get; set; }
+        public string indirizzo { get; set; }
+        public Nullable<double> portafoglio { get; set; }
     }
 }

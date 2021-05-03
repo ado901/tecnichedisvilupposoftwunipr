@@ -12,12 +12,12 @@ namespace server
     using System;
     using System.Collections.Generic;
     
-    public partial class commesso
+    public partial class CommessoEntity
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public commesso()
+        public CommessoEntity()
         {
-            this.transazioni = new HashSet<transazioni>();
+            this.transazioni = new HashSet<TransazioniEntity>();
         }
     
         public long codice_commesso { get; set; }
@@ -26,6 +26,6 @@ namespace server
         public int nprenotazioni { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<transazioni> transazioni { get; set; }
+        public virtual ICollection<TransazioniEntity> transazioni { get; set; }
     }
 }

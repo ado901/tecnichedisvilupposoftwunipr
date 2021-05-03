@@ -57,7 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="commesso.cs">
+    <Compile Include="CommessoEntity.cs">
       <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
     <Compile Include="IService1.cs" />
@@ -71,19 +71,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
-    <Compile Include="prodotto.cs">
+    <Compile Include="ProdottoEntity.cs">
       <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service1.cs" />
-    <Compile Include="transazioni.cs">
+    <Compile Include="TransazioniEntity.cs">
       <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
     <Compile Include="Utente.cs" />
-    <Compile Include="utenti.cs">
+    <Compile Include="UtentiEntity.cs">
       <DependentUpon>Model2.tt</DependentUpon>
     </Compile>
+    <Compile Include="Utility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

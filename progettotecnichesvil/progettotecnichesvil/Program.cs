@@ -33,7 +33,7 @@ namespace progettotecnichesvil
                 while (loop)
                 {
                     
-                    switch (loggato)
+                        switch (loggato)
                     {
                         case false:
                             
@@ -41,88 +41,94 @@ namespace progettotecnichesvil
                             Console.WriteLine("2. LOGIN");
                             
                             var key = Console.ReadKey();
-
-                            switch (key.KeyChar)
+                            try
                             {
-                                //REGISTRAZIONE
-                                case '1':
-                                    
-                                    Console.WriteLine("Inserisci il email:");
-                                    ut.email = Console.ReadLine();
+                                switch (key.KeyChar)
+                                {
+                                    //REGISTRAZIONE
+                                    case '1':
 
-                                    //tentativo di convalida formato email fallito lol
-                                    //if (IsValidEmail(ut.email))
-                                    //{
-                                    //    Console.WriteLine("email non valida");
-                                    //    break;
-                                    //}
-
-                                    Console.WriteLine("Inserisci il password:");
-                                    string inputString = Console.ReadLine();
-
-                                    //criptazione sha256
-                                    byte[] data = Encoding.ASCII.GetBytes(inputString);
-                                    data = new System.Security.Cryptography.SHA256Managed().ComputeHash(data);
-                                    ut.password = Encoding.ASCII.GetString(data);
-
-                                    Console.WriteLine("Inserisci il nome:");
-                                    ut.nome = Console.ReadLine();
-
-                                    Console.WriteLine("Inserisci il cognome:");
-                                    ut.cognome = Console.ReadLine();
-
-                                    Console.WriteLine("Inserisci  dataNascita: dd/mm/aaaa");
-                                    string dataNa = Console.ReadLine();
-                                    var datanascita = Utility.checkData(dataNa);
-                                    ut.nascita = new DateTime(datanascita.Item1, datanascita.Item2, datanascita.Item3);
-
-                                    Console.WriteLine("Inserisci  l indirizzo ");
-                                    ut.indirizzo = Console.ReadLine();
-
-                                    ut.portafoglio = 0;
-                                    var registrazione = wcf.Registrazione(ut);
-                                    if (registrazione.Item1)
-                                    {
-                                        Console.WriteLine("registrazione avvenuta");
-                                        loggato = true;
-                                        ut = registrazione.Item2;
-                                    }
-                                    else
-                                    {
-                                        Console.WriteLine("registrazione fallita");
-                                    }
-                                    break;
+                                        Console.WriteLine("Inserisci il email:");
+                                        ut.email = Console.ReadLine();
 
 
-                                //LOGIN
-                                case '2':
-                                    Console.WriteLine("tentativo di login");
-                                    ServiceReference1.Utente utenteregistrato = new ServiceReference1.Utente();
-                                    Console.WriteLine("inserire email:");
-                                    utenteregistrato.email = Console.ReadLine();
-                                    Console.WriteLine("inserire password:");
-                                    //criptazione sha256
-                                    string inputString1 = Console.ReadLine();
-                                    byte[] data1 = Encoding.ASCII.GetBytes(inputString1);
-                                    data1 = new System.Security.Cryptography.SHA256Managed().ComputeHash(data1);
-                                    utenteregistrato.password = Encoding.ASCII.GetString(data1);
-                                    var login = wcf.Login(utenteregistrato);
-                                    if (login.Item1)
-                                    {
-                                        Console.WriteLine("login effettuato");
-                                        loggato = true;
-                                        ut = login.Item2;
-                                    }
-                                    else
-                                    {
-                                        Console.WriteLine("login fallito");
-                                    }
-                                    break;
+                                        Utility.IsValidEmail(ut.email);
 
-                                default:
-                                    loop = false;
-                                    break;
+                                        Console.WriteLine("Inserisci il password:");
+                                        string inputString = Console.ReadLine();
+
+                                        //criptazione sha256
+                                        byte[] data = Encoding.ASCII.GetBytes(inputString);
+                                        data = new System.Security.Cryptography.SHA256Managed().ComputeHash(data);
+                                        ut.password = Encoding.ASCII.GetString(data);
+
+                                        Console.WriteLine("Inserisci il nome:");
+                                        ut.nome = Console.ReadLine();
+
+                                        Console.WriteLine("Inserisci il cognome:");
+                                        ut.cognome = Console.ReadLine();
+
+                                        Console.WriteLine("Inserisci  dataNascita: dd/mm/aaaa");
+                                        string dataNa = Console.ReadLine();
+                                        var datanascita = Utility.checkData(dataNa);
+                                        ut.nascita = new DateTime(datanascita.Item1, datanascita.Item2, datanascita.Item3);
+
+                                        Console.WriteLine("Inserisci  l indirizzo ");
+                                        ut.indirizzo = Console.ReadLine();
+
+                                        ut.portafoglio = 0;
+                                        var registrazione = wcf.Registrazione(ut);
+                                        if (registrazione.Item1)
+                                        {
+                                            Console.WriteLine("registrazione avvenuta");
+                                            loggato = true;
+                                            ut = registrazione.Item2;
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("registrazione fallita");
+                                        }
+                                        break;
+
+
+                                    //LOGIN
+                                    case '2':
+                                        Console.WriteLine("tentativo di login");
+                                        ServiceReference1.Utente utenteregistrato = new ServiceReference1.Utente();
+                                        Console.WriteLine("inserire email:");
+                                        utenteregistrato.email = Console.ReadLine();
+                                        Console.WriteLine("inserire password:");
+                                        //criptazione sha256
+                                        string inputString1 = Console.ReadLine();
+                                        byte[] data1 = Encoding.ASCII.GetBytes(inputString1);
+                                        data1 = new System.Security.Cryptography.SHA256Managed().ComputeHash(data1);
+                                        utenteregistrato.password = Encoding.ASCII.GetString(data1);
+                                        var login = wcf.Login(utenteregistrato);
+                                        if (login.Item1)
+                                        {
+                                            Console.WriteLine("login effettuato");
+                                            loggato = true;
+                                            ut = login.Item2;
+                                        }
+                                        else
+                                        {
+                                            throw new Exception("Login fallito, email o password errati");
+                                        }
+                                        break;
+
+                                    default:
+                                        loop = false;
+                                        break;
+                                }
+
                             }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine("Errore: " + ex.Message + "\npremere un tasto per continuare");
+                                Console.ReadKey();
+                            }
+
+                            
                             break;
 
 
@@ -152,19 +158,7 @@ namespace progettotecnichesvil
 
         }
 
-        //funzione trovata su stackoverflow per convalidare email
-        public static bool IsValidEmail(string email)
-        {
-            try
-            {
-                var addr = new System.Net.Mail.MailAddress(email);
-                return addr.Address == email;
-            }
-            catch
-            {
-                return false;
-            }
-        }
+
     
 }
 }

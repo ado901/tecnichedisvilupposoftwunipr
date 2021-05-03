@@ -10,3 +10,15 @@ D:\unipr\Tecniche di sviluppo software\progettotecnichesvil\server\obj\Debug\ser
 D:\unipr\Tecniche di sviluppo software\progettotecnichesvil\server\obj\Debug\server.csproj.CopyComplete
 D:\unipr\Tecniche di sviluppo software\progettotecnichesvil\server\obj\Debug\server.exe
 D:\unipr\Tecniche di sviluppo software\progettotecnichesvil\server\obj\Debug\server.pdb
+D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\server\bin\Debug\server.exe.config
+D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\server\bin\Debug\server.exe
+D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\server\bin\Debug\server.pdb
+D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\server\bin\Debug\EntityFramework.dll
+D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\server\bin\Debug\EntityFramework.SqlServer.dll
+D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\server\bin\Debug\EntityFramework.xml
+D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\server\bin\Debug\EntityFramework.SqlServer.xml
+D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\server\obj\Debug\server.csprojAssemblyReference.cache
+D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\server\obj\Debug\server.csproj.CoreCompileInputs.cache
+D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\server\obj\Debug\server.csproj.CopyComplete
+D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\server\obj\Debug\server.exe
+D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\server\obj\Debug\server.pdb
