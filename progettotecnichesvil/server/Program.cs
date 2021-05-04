@@ -13,10 +13,10 @@ namespace server
         {
             ServiceHost svc = new ServiceHost(typeof(Service1));
             svc.Open();
-            Console.WriteLine("apertura servizio wcf");
+            Console.WriteLine("Apertura servizio wcf");
             Console.ReadLine();
             svc.Close();
-            Console.WriteLine("chiusura servizio wcf");
+            Console.WriteLine("Chiusura servizio wcf");
         }
     }
 }
