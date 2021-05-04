@@ -22,3 +22,15 @@ D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\server\obj\De
 D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\server\obj\Debug\server.csproj.CopyComplete
 D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\server\obj\Debug\server.exe
 D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\server\obj\Debug\server.pdb
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\server\bin\Debug\server.exe.config
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\server\bin\Debug\server.exe
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\server\bin\Debug\server.pdb
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\server\bin\Debug\EntityFramework.dll
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\server\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\server\bin\Debug\EntityFramework.xml
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\server\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\server\obj\Debug\server.csprojAssemblyReference.cache
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\server\obj\Debug\server.csproj.CoreCompileInputs.cache
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\server\obj\Debug\server.csproj.CopyComplete
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\server\obj\Debug\server.exe
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\server\obj\Debug\server.pdb

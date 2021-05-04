@@ -141,8 +141,13 @@ namespace progettotecnichesvil
                             loop = false;
                             break;
 
+                            //1.VISUALIZZA CARRELLO
+                            //2.RICARICA PORTAFOGLIO
+                            //3.MODIFICA DATI ((1.MODIFICA NOME?) 2.MODIFICA E-MAIL 3.MODIFICA PASSWORD)
+                            //4.LOGOUT
+
                     }
-                    
+
 
                 }
 

@@ -11,3 +11,10 @@ D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\progettotecni
 D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\progettotecnichesvil\obj\Debug\client.csproj.CoreCompileInputs.cache
 D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\progettotecnichesvil\obj\Debug\progettotecnichesvil.exe
 D:\unipr\Tecniche di sviluppo software\codici\progettotecnichesvil\progettotecnichesvil\obj\Debug\progettotecnichesvil.pdb
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\progettotecnichesvil\bin\Debug\progettotecnichesvil.exe.config
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\progettotecnichesvil\bin\Debug\progettotecnichesvil.exe
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\progettotecnichesvil\bin\Debug\progettotecnichesvil.pdb
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\progettotecnichesvil\obj\Debug\client.csprojAssemblyReference.cache
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\progettotecnichesvil\obj\Debug\client.csproj.CoreCompileInputs.cache
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\progettotecnichesvil\obj\Debug\progettotecnichesvil.exe
+C:\Users\Andrea\source\repos\tecnichedisvilupposoftwunipr\progettotecnichesvil\progettotecnichesvil\obj\Debug\progettotecnichesvil.pdb
