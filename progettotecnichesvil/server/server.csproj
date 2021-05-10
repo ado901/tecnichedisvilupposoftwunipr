@@ -57,6 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classi\Commesso.cs" />
+    <Compile Include="Classi\Prodotto.cs" />
+    <Compile Include="Classi\Transazione.cs" />
     <Compile Include="commesso.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -85,7 +88,7 @@
     <Compile Include="transazioni.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Utente.cs" />
+    <Compile Include="Classi\Utente.cs" />
     <Compile Include="utenti.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
