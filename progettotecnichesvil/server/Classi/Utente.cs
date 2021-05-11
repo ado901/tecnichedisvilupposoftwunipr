@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -9,10 +10,15 @@ namespace server
 {
     public class Utente
     {
+        [Required]
         public string password { get; set; }
+        [Required]
         public string nome { get; set; }
+        [Required]
         public string cognome { get; set; }
+        [Required]
         public DateTime nascita { get; set; }
+        [Required]
         public string email { get; set; }
         public string indirizzo { get; set; }
         public double? portafoglio { get; set; }
@@ -48,5 +54,7 @@ namespace server
 
 
         }
+
+        
     }
 }
